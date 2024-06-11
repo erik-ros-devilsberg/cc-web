@@ -1,0 +1,72 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+	--primary: 					#09865C;
+	--primaryDiminished:		#6bb69d;
+	--primaryActive:			#055139;
+	--onPrimary:				#fff;
+	--primaryContainer: 		#9AD0B7;
+	--PrimaryContainerDisabled: #aed9c5;
+	--onPrimaryContainer:		#353A47;
+	--onPrimaryContainerDiminished: #797e7a;
+	--secundary:				#F2BBC9;
+	--tertiary:					#F7F4F3;
+	--surface:					#f7f4f3;
+	--modalContainerBackground: rgba(247, 244, 243, 0.5);
+	--border:					#353a47;
+	--error:					#F52314;
+	--onError:					#fff;
+}
+
+@font-face {
+    font-family: "Urbanist";
+    src: url('/src/assets/fonts/Urbanist-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: "SourceCodePro";
+	src: url('/src/assets/fonts/SourceSerif4-VariableFont_wght.ttf');
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+	font-size: 16px; /* Base font size */
+  }
+
+body {
+	min-height: 100vh;
+	margin:0;
+	padding:0px; 
+	font-family: SourceCodePro;
+	color:var(--onSecondaryContainer);
+	background-color: #FFF;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Urbanist;
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+p, dl, ol, ul, table, blockquote {
+	margin-bottom: 20px;
+}
+
+.center{text-align: center;}  
+.right{text-align: right;} 
+.left{text-align: left;}
+
+.floatLeft{float: left;}
+.floatRight{float: right;}

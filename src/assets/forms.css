@@ -1,0 +1,34 @@
+input {
+	border: 2px solid var(--primary);
+	padding: 4px;
+	border-radius: 8px;
+	color: var(--primary);
+	margin-bottom: 8px;
+	font-family: "Urbanist";
+}
+
+button, .button{
+	border-radius: 8px;
+	padding: 8px 32px;
+	color: var(--onPrimary);
+	background-color: var(--primary);
+	font-family: "Urbanist";
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 40px;
+	border: 0px;
+	font-size: 0.9em;
+	display: inline-block;
+	cursor: pointer;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(primary); /* Example placeholder color */
+	opacity: 1; /* Firefox */
+}
+
+button:hover,
+.button:hover {
+	background-color: var(--primaryActive);
+}  
