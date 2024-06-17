@@ -19,7 +19,7 @@
 				<p v-else>...</p>
 			</div>
 		</div>
-		<img src="@/assets/hero-image.svg" id="heroImage" alt="artistic impression of the CREW-CRAFT platform" >
+		<img src="@/assets/hero-image-800x800.png" id="heroImage" alt="artistic impression of the CREW-CRAFT platform" >
 	</section>
 </template>
 <script setup>
@@ -95,4 +95,29 @@
 		display: inline-block;
 		flex-direction: row;
 	}
+
+	@media only screen and (max-width: 800px) {
+		#hero {
+			flex-direction: column;
+			height: auto;
+		}
+
+		#leader {
+			width: 100%;
+			order: 2;
+		}
+
+		#hero img {
+			width: 100%;
+			margin-left: 0;
+			order:1;
+			display: none;
+		}
+
+		#hero input,
+		#hero button{
+			width: 90%;
+		}
+	}
+
 </style>

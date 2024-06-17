@@ -15,7 +15,8 @@
 
 main {
 	flex-grow: 1;
-	min-height:80vh
+	min-height:80vh;
+	padding: 5px;
 }
 
 .disclaimer{
@@ -33,6 +34,7 @@ dl{
 
 dt {
 	font-weight: bold;
+	min-width: 105px;
 }
 
 dd {
