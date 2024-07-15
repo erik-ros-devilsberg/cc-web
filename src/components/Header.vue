@@ -6,6 +6,7 @@
 		</RouterLink>
 
 		<nav>
+			<RouterLink to="/tutorials">tutorials</RouterLink>
 			<RouterLink to="/about">Over</RouterLink>
 			<a @click="toggleMenu">Inloggen</a>
             <div v-if="showMenu" id="appMenu">
