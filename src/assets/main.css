@@ -1,5 +1,8 @@
 @import './base.css';
 @import './forms.css';
+@import './structure.css';
+@import './cards.css';
+@import './switch.css';
 
 #app {
 	max-width: 1024px;

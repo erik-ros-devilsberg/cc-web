@@ -4,13 +4,8 @@
 			<h1>Eenvoudig roosteren en tijd schrijven</h1>
 			<p id="standFirst">&quot;Eenvoudig werkt vaak toch het best&quot;</p>
 			<div v-if="!state.isSend">
-				<input 
-					placeholder="email"
-					id="email"
-					type="email"
-					name="email"><br>
-				<button @click="sendForm">Begin gratis</button><br>
-				<p class="disclaimer">(voor bedrijven)</p>
+				<RouterLink to="register" class="button">Begin gratis</RouterLink><br>
+				<p class="disclaimer">inschrijven voor bedrijven eenvoudig in 3 stappen</p>
 			</div>
 			<div v-else>
 				<h4>Registratie:</h4>
